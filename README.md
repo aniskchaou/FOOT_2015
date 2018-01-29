@@ -5,5 +5,5 @@
 
 <b>Technologies utilisés : C#, XAML, OpenCV, DirectShow, Microsoft SQL, .NET
 
-<b>Date:janvier 2015
+<b>Date:novembre 2014
   
