@@ -1,0 +1,52 @@
+﻿<Window x:Class="football.MainWindow"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="371" Width="525" >
+    <Grid>
+        <TabControl Margin="0,20,0,0">
+            <TabItem Header="Matche">
+                <Grid Background="Transparent">
+                    <Button   Click="_interrompre"  Name="btnArret" Content="arret" HorizontalAlignment="Left" Margin="20,212,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button  Click="_lire" Name="btnLecture"   Content="lecture" HorizontalAlignment="Left" Margin="109,212,0,0" VerticalAlignment="Top" Width="59"/>
+                    <Button Name="Enregistrer"   Content="enregistrer" HorizontalAlignment="Left" Margin="189,212,0,0" VerticalAlignment="Top" Width="63"/>
+                    <Button  Click="_ouvrir"  Name="btnParcourir" Content="parcourir" HorizontalAlignment="Left" Margin="275,212,0,0" VerticalAlignment="Top" Width="58"/>
+                    <MediaElement  Name="Lecteur"  LoadedBehavior="Manual"  HorizontalAlignment="Left" Height="168" Margin="31,22,0,0" VerticalAlignment="Top" Width="284"/>
+                    <Button  Click="_arreter"   Name="btnPause"      Content="pause" HorizontalAlignment="Left" Margin="354,212,0,0" VerticalAlignment="Top" Width="57"/>
+                    <DatePicker Name="Date" HorizontalAlignment="Left" Margin="354,22,0,0" VerticalAlignment="Top"/>
+                    <DataGrid Name="dataMatche" HorizontalAlignment="Left" Margin="354,51,0,0" VerticalAlignment="Top" Height="96" Width="133"  ItemsSource="{Binding}"  AutoGenerateColumns="True"  SelectionChanged="DataGrid_SelectionChanged"/>
+                    <TextBox  Name="Stade" HorizontalAlignment="Left" Height="23" Margin="354,167,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133"/>
+                    <Button x:Name="exporter" Content="exporter"  HorizontalAlignment="Left" Margin="427,212,0,0" VerticalAlignment="Top" Width="60" Click="_exporter_smil"/>
+                    <Button Content="convertir video en images" HorizontalAlignment="Left" Margin="20,251,0,0" VerticalAlignment="Top" Width="148" Height="28" Click="convertirenimages"/>
+                    <!--<MediaElement Name="Lecteur" LoadedBehavior="Manual" Margin="0,0,0,110" HorizontalAlignment="Left" Width="487"/>
+                    <Button Name="btnPause" Content="Pause" HorizontalAlignment="Left" Margin="0,0,0,85" Width="75" Height="20" VerticalAlignment="Bottom" Click="_arreter"/>
+                    <Button Name="btnLecture" Content="Lecture" HorizontalAlignment="Left" Margin="80,0,0,85" Width="75" Height="20" VerticalAlignment="Bottom" Click="_lire"/>
+                    <Button Name="btnArret" Content="Arret" HorizontalAlignment="Left" Margin="160,0,0,85" Width="75" Height="20" VerticalAlignment="Bottom" Click="_interrompre"/>
+                    <Button Name="btnParcourir" Content="Importer Video" HorizontalAlignment="Left" Margin="240,0,0,85" Width="123" Height="20" VerticalAlignment="Bottom" Click="_ouvrir"/>
+
+                    <DatePicker Name="Date" HorizontalAlignment="Left" Margin="79,334,0,0" VerticalAlignment="Top"/>
+                    <DataGrid Name="dataMatche"  ItemsSource="{Binding}"  AutoGenerateColumns="True" Margin="492,0,0,10" SelectionChanged="DataGrid_SelectionChanged"/>
+                    <Button Name="Enregistrer" Content="Enregistrer" HorizontalAlignment="Left" Margin="202,0,0,27" Width="92" Click="Enregistrer_Click" Height="22" VerticalAlignment="Bottom"/>
+                    <TextBox Name="Stade" Margin="35,0,0,57" TextWrapping="Wrap" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="162"/>
+                    <Label Content="Stade" HorizontalAlignment="Left" Margin="0,0,0,64" VerticalAlignment="Bottom"/>
+                    <Label Content="Date" HorizontalAlignment="Left" Margin="0,0,0,33" RenderTransformOrigin="-0.036,0.438" Height="16" VerticalAlignment="Bottom"/>
+               -->
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Equipe">
+                <Grid Background="Transparent">
+                    <!--
+                    <Image HorizontalAlignment="Left" Height="156" Margin="10,38,0,0" VerticalAlignment="Top" Width="261"/>
+                    <Button Content="Importer logo" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
+                    <Label Content="Nom" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Height="18" Width="38"/>
+                    <Label Content="Pays" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.107,-0.625" Width="38" Height="18"/>
+                    <TextBox Name="nomE" HorizontalAlignment="Left" Height="23" Margin="48,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="184"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="53,226,0,0" VerticalAlignment="Top" Width="179"/>
+                    <DataGrid Name="gridEqipe" HorizontalAlignment="Left" Margin="348,10,0,0" VerticalAlignment="Top" Height="299" Width="378"/>
+                    <Button Content="Enregistrer" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_1"/>
+               -->
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
